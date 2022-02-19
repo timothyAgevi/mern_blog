@@ -1,1 +1,1 @@
-# A simple redux blog 
+# A simple redux blog project
