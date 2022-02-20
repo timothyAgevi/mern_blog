@@ -4,6 +4,6 @@ const s = new userService()
 
 router.post("/login",s.login)
 router.post("/register",s.register)
-router.put("/login",s.updateprofile)
+router.put("/update/:id",s.updateprofile)
 
 module.exports=router
