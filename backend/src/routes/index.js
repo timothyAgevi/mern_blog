@@ -1,15 +1,16 @@
-const {Application} = require("express")
-// const express = require("express")
-// const cors = require("cors")
-// const logger = require("morgan")
-// const helmet = require("helmet")
+// eslint-disable-next-line no-unused-vars
+const { Application } = require("express")
+const userController = require("./../controllers/user")
+const blogConroller = require("./../controllers/blog")
 
 /**
- * 
- * @param {{app:Application}} param0 
+ *
+ * @param {{app:Application}} param0
  */
-module.exports =({ app })=>{
-   app.get("/", (req,res) =>{
-       return res.json({ message: "Sucess"})
-   })
+module.exports = ({ app }) => {
+	app.use("/user", userController)
+	app.use("/blog", blogConroller)
+	app.get("/", (req, res) => {
+		return res.json({ message: "Success" })
+	})
 }
