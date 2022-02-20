@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 const { Request, Response, NextFunction } = require("express")
 
-class UseController {
+class UserController {
 	/**
 	 *
 	 * @param {Request} req
