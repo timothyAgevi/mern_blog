@@ -5,7 +5,7 @@ const { Request, Response, NextFunction } = require("express")
 class BlogController {
 	/**
 	 *
-	 * @param {Reaquest} req
+	 * @param {Request} req
 	 * @param {Response} res
 	 * @param {NextFunction} next
 	 * @returns
@@ -15,7 +15,7 @@ class BlogController {
 	}
 	/**
 	 *
-	 * @param {Reaquest} req
+	 * @param {Request} req
 	 * @param {Response} res
 	 * @param {NextFunction} next
 	 * @returns
