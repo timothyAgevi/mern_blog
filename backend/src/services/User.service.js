@@ -36,4 +36,4 @@ class UserController {
 	}
 }
 
-module.exports = UseController
+module.exports = UserController
