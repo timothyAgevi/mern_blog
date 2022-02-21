@@ -2,7 +2,14 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <div>
+<nav>
+        <Link to ={"/"}> Homepage</Link> 
+        <Link to ={"/login"}>Login</Link> 
+        <Link to ={"/register"}>Register</Link> 
+</nav>
+
+    </div>
   )
 }
 
