@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const userService =require(" ./../services/User.service")
+const userService =require("./../services/user.service")
 const s = new userService()
 
 router.post("/login",s.login)
