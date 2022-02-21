@@ -15,8 +15,9 @@ module.exports = ({ app }) => {
 	app.use(express.json({ limit: "100mb" }))
 	app.use(express.urlencoded({ extended: true }))
 	app.use(logger("combined"))
-	app.use(helmet())
+	app.use(helmet() )
 	db({ db_url: DATABASE_URL })
 	app.use(cors({ origin: "*" }))
 	routes({ app })
+	
 }
