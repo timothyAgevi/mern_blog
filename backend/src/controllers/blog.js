@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const blogService =require(" ./../services/blog.service")
+const blogService =require("./../services/blog.service")
 const s = new blogService()
 
 router.post("/new",s.login)
